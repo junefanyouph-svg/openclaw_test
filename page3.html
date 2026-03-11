@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Page 3 - Options and Preferences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+        <a href="page4.html">Page 4 (Results)</a>
+    </nav>
+
+    <h1>Training Site: Page 3</h1>
+    <p>This final page includes radio buttons and checkboxes for selection-based bot training.</p>
+
+    <form id="form3">
+        <div class="form-group">
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+        <div class="form-group">
+            <p>Interests:</p>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="music"> Music</label>
+            <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+        </div>
+        <button type="button" id="save3" data-action="save">Save Settings</button>
+        <button type="button" id="delete3" data-action="delete">Delete Profile</button>
+    </form>
+
+    <div id="message"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>

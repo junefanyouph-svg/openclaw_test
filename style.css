@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+nav {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}

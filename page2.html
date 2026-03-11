@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Page 2 - Selection and Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+        <a href="page4.html">Page 4 (Results)</a>
+    </nav>
+
+    <h1>Training Site: Page 2</h1>
+    <p>This page includes a selection dropdown and a multi-line text area for complex field training.</p>
+
+    <form id="form2">
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">Select a category...</option>
+                <option value="feedback">General Feedback</option>
+                <option value="bug">Bug Report</option>
+                <option value="support">Request Support</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+        </div>
+        <button type="button" id="submit2" data-action="feedback">Submit Feedback</button>
+        <button type="button" id="cancel2" data-action="cancel">Cancel</button>
+    </form>
+
+    <div id="message"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
